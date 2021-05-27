@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">ShoeStore</string>
     <string name="login_fragment">Login Fragment</string>
+    <string name="welcome_fragment">Welcome Fragment</string>
+    <string name="instruction_fragment">Instruction Fragment</string>
+    <string name="shoe_list_fragment">ShoeList Fragment</string>
+    <string name="shoe_detail_fragment">ShoeDetail Fragment</string>
 </resources>

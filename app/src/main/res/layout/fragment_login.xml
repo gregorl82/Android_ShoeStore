@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".screens.login.LoginFragment">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/login_fragment"
-        android:textAlignment="center" />
+        android:layout_height="match_parent">
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/login_fragment"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+</layout>
+

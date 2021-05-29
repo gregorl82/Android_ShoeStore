@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
@@ -11,6 +12,8 @@ import com.udacity.shoestore.databinding.FragmentShoeListBinding
 class ShoeListFragment : Fragment() {
 
     private lateinit var binding: FragmentShoeListBinding
+
+    private val viewModel: ShoeViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

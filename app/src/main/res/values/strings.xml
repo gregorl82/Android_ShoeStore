@@ -10,8 +10,8 @@
     <string name="password">Password</string>
     <string name="log_in">Log in</string>
     <string name="welcome">Welcome</string>
-    <string name="instructions">Instructions</string>
-    <string name="add_new_shoe">Add a new shoe</string>
+    <string name="instructions">User guide</string>
+    <string name="add_new_shoe">Add new shoe</string>
     <string name="shoe_list">Shoe list</string>
     <string name="success">Success!</string>
     <string name="next">Next</string>

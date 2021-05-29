@@ -5,6 +5,7 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
@@ -26,6 +27,10 @@ class ShoeListFragment : Fragment() {
         }
 
         setHasOptionsMenu(true)
+
+        viewModel.shoeList.observe(viewLifecycleOwner, Observer {
+            binding.startText.text = it[0].name
+        })
 
         return binding.root
     }

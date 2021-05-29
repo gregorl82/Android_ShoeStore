@@ -1,4 +1,4 @@
-package com.udacity.shoestore.screens.shoelist
+package com.udacity.shoestore.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,17 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import com.udacity.shoestore.R
-import com.udacity.shoestore.databinding.FragmentShoeListBinding
+import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
 
-class ShoeListFragment : Fragment() {
+class ShoeDetailFragment : Fragment() {
 
-    private lateinit var binding: FragmentShoeListBinding
+    private lateinit var binding: FragmentShoeDetailBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_list, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_detail, container, false)
         return binding.root
     }
 }

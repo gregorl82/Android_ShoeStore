@@ -17,4 +17,10 @@
     <string name="next">Next</string>
     <string name="shoe_inventory_tracker">Shoe Inventory Tracker</string>
     <string name="logout">Logout</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="shoe_name_label">Shoe name</string>
+    <string name="company">Company</string>
+    <string name="shoe_size">Shoe size</string>
+    <string name="description">Description</string>
 </resources>

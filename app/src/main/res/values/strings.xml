@@ -5,4 +5,8 @@
     <string name="instruction_fragment">Instruction Fragment</string>
     <string name="shoe_list_fragment">ShoeList Fragment</string>
     <string name="shoe_detail_fragment">ShoeDetail Fragment</string>
+    <string name="create">Create</string>
+    <string name="log_in">Log in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
 </resources>

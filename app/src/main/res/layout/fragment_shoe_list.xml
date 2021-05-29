@@ -12,7 +12,7 @@
             android:id="@+id/shoe_list_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/shoe_list_fragment"
+            android:text="@string/shoes_will_appear_here"
             android:textAlignment="center" />
 
     </LinearLayout>

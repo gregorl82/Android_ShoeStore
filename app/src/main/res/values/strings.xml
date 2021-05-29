@@ -3,7 +3,7 @@
     <string name="login_fragment">Login Fragment</string>
     <string name="welcome_fragment">Welcome Fragment</string>
     <string name="instruction_fragment">Instruction Fragment</string>
-    <string name="shoe_list_fragment">ShoeList Fragment</string>
+    <string name="shoes_will_appear_here">Shoes will appear here</string>
     <string name="shoe_detail_fragment">ShoeDetail Fragment</string>
     <string name="create">Create account</string>
     <string name="email">Email</string>
@@ -13,4 +13,6 @@
     <string name="instructions">Instructions</string>
     <string name="add_new_shoe">Add a new shoe</string>
     <string name="shoe_list">Shoe list</string>
+    <string name="success">Success!</string>
+    <string name="next">Next</string>
 </resources>

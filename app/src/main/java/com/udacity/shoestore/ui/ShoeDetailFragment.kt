@@ -10,6 +10,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
+import com.udacity.shoestore.models.Shoe
 
 class ShoeDetailFragment : Fragment() {
 
@@ -23,11 +24,15 @@ class ShoeDetailFragment : Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_detail, container, false)
 
+        val newShoe = Shoe()
+        binding.shoe = newShoe
+
         binding.cancelButton.setOnClickListener {
             findNavController().navigateUp()
         }
 
         binding.saveButton.setOnClickListener {
+            viewModel.addShoe(binding.shoe!!)
             findNavController().navigateUp()
         }
 

@@ -54,4 +54,8 @@ class ShoeViewModel : ViewModel() {
         super.onCleared()
         Timber.i("ShoeViewModel destroyed")
     }
+
+    fun addShoe(shoe: Shoe) {
+        _shoeList.value = _shoeList.value?.plus(shoe)
+    }
 }

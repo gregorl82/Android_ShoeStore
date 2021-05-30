@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.ShoeDetailFragment">
 
-
     <data>
+
         <variable
             name="shoe"
             type="com.udacity.shoestore.models.Shoe" />
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="numberDecimal"
-            android:text="@{Double.toString(shoe.size)}"
+            android:text="@={`` + shoe.size}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/shoe_size_label"
             app:layout_constraintTop_toBottomOf="@+id/company_edit_text" />

@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
+import kotlinx.android.synthetic.main.shoe_list_item.view.*
 
 class ShoeListFragment : Fragment() {
 
@@ -31,7 +32,15 @@ class ShoeListFragment : Fragment() {
 
         viewModel.shoeList.observe(viewLifecycleOwner, Observer {
 
-            binding.startText.text = it[0].name
+            it.forEach { shoe ->
+                val view = inflater.inflate(R.layout.shoe_list_item, container, false)
+                view.name_text.text = shoe.name
+                view.company_text.text = shoe.company
+                view.size_text.text = "Size: ${shoe.size}"
+                view.description_text.text = shoe.description
+
+                binding.shoesList.addView(view)
+            }
         })
 
         return binding.root

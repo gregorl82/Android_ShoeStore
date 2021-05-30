@@ -24,11 +24,11 @@ class ShoeDetailFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_detail, container, false)
 
         binding.cancelButton.setOnClickListener {
-            findNavController().navigate(R.id.action_shoeDetailFragment_to_shoeListFragment)
+            findNavController().navigateUp()
         }
 
         binding.saveButton.setOnClickListener {
-            findNavController().navigate(R.id.action_shoeDetailFragment_to_shoeListFragment)
+            findNavController().navigateUp()
         }
 
         return binding.root

@@ -2,6 +2,7 @@ package com.udacity.shoestore.ui
 
 import android.os.Bundle
 import android.view.*
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
@@ -29,6 +30,7 @@ class ShoeListFragment : Fragment() {
         setHasOptionsMenu(true)
 
         viewModel.shoeList.observe(viewLifecycleOwner, Observer {
+
             binding.startText.text = it[0].name
         })
 

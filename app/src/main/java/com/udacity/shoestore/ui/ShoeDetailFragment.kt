@@ -1,12 +1,15 @@
 package com.udacity.shoestore.ui
 
+import android.app.Activity
+import android.content.Context
 import android.os.Bundle
-import android.text.Editable
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -28,16 +31,12 @@ class ShoeDetailFragment : Fragment() {
 
         binding.shoe = Shoe()
 
-        binding.shoeSizeEditText.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) binding.shoeSizeEditText.text.clear()
-        }
-
         binding.cancelButton.setOnClickListener {
             findNavController().navigateUp()
         }
 
         binding.saveButton.setOnClickListener {
-
+            hideKeyboard()
             if (validateInput()) {
                 Toast.makeText(
                     context,
@@ -60,5 +59,10 @@ class ShoeDetailFragment : Fragment() {
                 || binding.shoeSizeEditText.text.isEmpty()
                 || binding.shoeSizeEditText.text.toString() == "0.0"
                 || binding.descriptionEditText.text.isEmpty()
+    }
+
+    private fun hideKeyboard() {
+        val imm = context?.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view?.windowToken, 0)
     }
 }

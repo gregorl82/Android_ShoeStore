@@ -15,13 +15,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:padding="8dp">
 
         <TextView
             android:id="@+id/shoe_entry_title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enter shoe details"
+            android:fontFamily="@font/raleway"
+            android:text="@string/shoe_entry_header"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +31,9 @@
             android:id="@+id/shoe_name_label"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
             android:text="@string/shoe_name_label"
+            android:textStyle="bold"
             app:layout_constraintBaseline_toBaselineOf="@id/shoe_name_edit_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/shoe_entry_title_text" />
@@ -39,8 +42,9 @@
             android:id="@+id/shoe_name_edit_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@={shoe.name}"
+            android:fontFamily="@font/raleway"
             android:hint="@string/shoe_name_hint"
+            android:text="@={shoe.name}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/shoe_name_label"
             app:layout_constraintTop_toBottomOf="@id/shoe_entry_title_text" />
@@ -50,7 +54,9 @@
             android:id="@+id/company_label"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
             android:text="@string/company"
+            android:textStyle="bold"
             app:layout_constraintBaseline_toBaselineOf="@+id/company_edit_text"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -59,9 +65,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:fontFamily="@font/raleway"
+            android:hint="@string/company_hint"
             android:inputType="textPersonName"
             android:text="@={shoe.company}"
-            android:hint="@string/company_hint"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/company_label"
             app:layout_constraintTop_toBottomOf="@+id/shoe_name_edit_text" />
@@ -70,7 +77,9 @@
             android:id="@+id/shoe_size_label"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
             android:text="@string/shoe_size"
+            android:textStyle="bold"
             app:layout_constraintBaseline_toBaselineOf="@+id/shoe_size_edit_text"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -78,7 +87,9 @@
             android:id="@+id/shoe_size_edit_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:digits="0123456789."
             android:ems="10"
+            android:fontFamily="@font/raleway"
             android:inputType="numberDecimal"
             android:text="@={`` + shoe.size}"
             app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +100,9 @@
             android:id="@+id/description_label"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
             android:text="@string/description"
+            android:textStyle="bold"
             app:layout_constraintBaseline_toBaselineOf="@+id/description_edit_text"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -98,30 +111,30 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:fontFamily="@font/raleway"
+            android:hint="@string/description_hint"
             android:inputType="textPersonName"
             android:text="@={shoe.description}"
-            android:hint="@string/description_hint"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/description_label"
             app:layout_constraintTop_toBottomOf="@+id/shoe_size_edit_text" />
 
         <Button
             android:id="@+id/cancel_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/buttonStyle"
+            android:layout_marginTop="16dp"
             android:text="@string/cancel"
-            app:layout_constraintBottom_toTopOf="@id/save_button"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_edit_text" />
 
         <Button
             android:id="@+id/save_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/buttonStyle"
             android:text="@string/save"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cancel_button" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -16,14 +16,15 @@
     <string name="shoe_list">Shoe list</string>
     <string name="add_new_shoe">Add new shoe</string>
 
-    <!--Menu text-->
+    <!--Menu item text-->
     <string name="logout">Logout</string>
 
-    <!--Screen text-->
+    <!--Onscreen text-->
     <string name="success">Success!</string>
     <string name="placeholder">Click the \'+\' button to start adding shoes</string>
     <string name="shoe_inventory_tracker">Welcome to Shoe Tracker</string>
     <string name="instructions">Instructions</string>
+    <string name="shoe_entry_header">Enter shoe details</string>
 
     <!--Buttons-->
     <string name="next">Next</string>

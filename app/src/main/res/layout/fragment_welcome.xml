@@ -23,14 +23,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/success"
-            android:textStyle="bold"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/next_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/continue_btn"/>
+            style="@style/buttonStyle"
+            android:text="@string/continue_btn" />
 
     </LinearLayout>
 

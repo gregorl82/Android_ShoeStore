@@ -32,14 +32,18 @@ class ShoeListFragment : Fragment() {
 
         viewModel.shoeList.observe(viewLifecycleOwner, Observer {
 
-            it.forEach { shoe ->
-                val view = inflater.inflate(R.layout.shoe_list_item, container, false)
-                view.name_text.text = shoe.name
-                view.company_text.text = shoe.company
-                view.size_text.text = "Size: ${shoe.size}"
-                view.description_text.text = shoe.description
+            if (it.isNotEmpty()) {
+                binding.placeholderText.visibility = View.GONE
 
-                binding.shoesList.addView(view)
+                it.forEach { shoe ->
+                    val view = inflater.inflate(R.layout.shoe_list_item, container, false)
+                    view.name_text.text = shoe.name
+                    view.company_text.text = shoe.company
+                    view.size_text.text = "Size: ${shoe.size}"
+                    view.description_text.text = shoe.description
+
+                    binding.shoesList.addView(view)
+                }
             }
         })
 
@@ -52,7 +56,7 @@ class ShoeListFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId === R.id.action_logout) {
+        if (item.itemId == R.id.action_logout) {
             findNavController().navigate(R.id.action_shoeListFragment_to_loginFragment)
         }
 

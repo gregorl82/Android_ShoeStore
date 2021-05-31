@@ -1,29 +1,43 @@
 <resources>
-    <string name="app_name">ShoeStore</string>
-    <string name="login_fragment">Login Fragment</string>
-    <string name="welcome_fragment">Welcome Fragment</string>
-    <string name="instruction_fragment">Instruction Fragment</string>
-    <string name="shoes_will_appear_here">Click the add button below to start adding shoes</string>
-    <string name="shoe_detail_fragment">ShoeDetail Fragment</string>
-    <string name="create">Create account</string>
+    <string name="app_name">Shoe Store</string>
+
+    <!--Field labels-->
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="log_in">Log in</string>
-    <string name="welcome">Welcome</string>
-    <string name="instructions">User guide</string>
-    <string name="add_new_shoe">Add new shoe</string>
-    <string name="shoe_list">Shoe list</string>
-    <string name="success">Success!</string>
-    <string name="next">Next</string>
-    <string name="shoe_inventory_tracker">Welcome to Shoe Tracker</string>
-    <string name="logout">Logout</string>
-    <string name="cancel">Cancel</string>
-    <string name="save">Save</string>
     <string name="shoe_name_label">Shoe name</string>
     <string name="company">Company</string>
     <string name="shoe_size">Shoe size</string>
     <string name="description">Description</string>
-    <string name="enter">Enter</string>
-    <string name="continue_btn">Continue</string>
+
+    <!--Nav destination headers-->
+    <string name="log_in">Log in</string>
+    <string name="welcome">Welcome</string>
+    <string name="user_guide">User guide</string>
+    <string name="shoe_list">Shoe list</string>
+    <string name="add_new_shoe">Add new shoe</string>
+
+    <!--Menu text-->
+    <string name="logout">Logout</string>
+
+    <!--Screen text-->
+    <string name="success">Success!</string>
     <string name="placeholder">Click the \'+\' button to start adding shoes</string>
+    <string name="shoe_inventory_tracker">Welcome to Shoe Tracker</string>
+    <string name="instructions">Instructions</string>
+
+    <!--Buttons-->
+    <string name="next">Next</string>
+    <string name="continue_btn">Continue</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="create">Create account</string>
+    <string name="enter">Enter</string>
+
+    <!--Hints for shoe entry-->
+    <string name="shoe_name_hint">Enter the name of the shoe</string>
+    <string name="company_hint">Enter the shoe manufacturer</string>
+    <string name="description_hint">Enter a description for this shoe</string>
+
+    <!--Toast message-->
+    <string name="shoe_details_missing">Enter all details before saving</string>
 </resources>

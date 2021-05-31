@@ -32,18 +32,17 @@ class ShoeListFragment : Fragment() {
         setHasOptionsMenu(true)
 
         viewModel.shoeList.observe(viewLifecycleOwner, Observer {
-
             if (it.isNotEmpty()) {
                 binding.placeholderText.visibility = View.GONE
 
                 it.forEach { shoe ->
-                    val shoeListBinding: ShoeListItemBinding = DataBindingUtil.inflate(inflater, R.layout.shoe_list_item, container, false)
+                    val shoeListBinding: ShoeListItemBinding =
+                        DataBindingUtil.inflate(inflater, R.layout.shoe_list_item, container, false)
                     shoeListBinding.shoe = shoe
                     binding.shoesList.addView(shoeListBinding.root)
                 }
             }
         })
-
         return binding.root
     }
 

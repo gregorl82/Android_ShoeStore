@@ -12,7 +12,6 @@ class ShoeViewModel : ViewModel() {
     val shoeList: LiveData<List<Shoe>>
         get() = _shoeList
 
-
     init {
         Timber.i("ShoeViewModel created")
     }

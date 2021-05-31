@@ -26,23 +26,24 @@ class ShoeListFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_list, container, false)
 
         binding.fab.setOnClickListener {
-            findNavController().navigate(R.id.action_shoeListFragment_to_shoeDetailFragment)
+            findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToShoeDetailFragment())
         }
 
         setHasOptionsMenu(true)
 
-        viewModel.shoeList.observe(viewLifecycleOwner, Observer {
-            if (it.isNotEmpty()) {
+        viewModel.shoeList.observe(viewLifecycleOwner, Observer { list ->
+            if (list.isNotEmpty()) {
                 binding.placeholderText.visibility = View.GONE
 
-                it.forEach { shoe ->
-                    val shoeListBinding: ShoeListItemBinding =
+                for (shoe in list) {
+                    val shoeListItemBinding: ShoeListItemBinding =
                         DataBindingUtil.inflate(inflater, R.layout.shoe_list_item, container, false)
-                    shoeListBinding.shoe = shoe
-                    binding.shoesList.addView(shoeListBinding.root)
+                    shoeListItemBinding.shoe = shoe
+                    binding.shoesList.addView(shoeListItemBinding.root)
                 }
             }
         })
+
         return binding.root
     }
 
@@ -53,9 +54,8 @@ class ShoeListFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.action_logout) {
-            findNavController().navigate(R.id.action_shoeListFragment_to_loginFragment)
+            findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToLoginFragment())
         }
-
         return super.onOptionsItemSelected(item)
     }
 }

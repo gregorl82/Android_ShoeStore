@@ -21,14 +21,18 @@ class LoginFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
 
         binding.nextButton.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_welcomeFragment)
+            navigateToWelcomeScreen()
         }
 
         binding.createButton.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_welcomeFragment)
+            navigateToWelcomeScreen()
         }
 
         return binding.root
+    }
+
+    private fun navigateToWelcomeScreen() {
+        findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
     }
 
 }

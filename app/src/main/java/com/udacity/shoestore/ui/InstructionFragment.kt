@@ -20,7 +20,7 @@ class InstructionFragment : Fragment() {
             DataBindingUtil.inflate(inflater, R.layout.fragment_instruction, container, false)
 
         binding.nextButton.setOnClickListener {
-            findNavController().navigate(R.id.action_instructionFragment_to_shoeListFragment)
+            findNavController().navigate(InstructionFragmentDirections.actionInstructionFragmentToShoeListFragment())
         }
 
         return binding.root

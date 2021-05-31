@@ -25,13 +25,17 @@ class ShoeDetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_detail, container, false)
+
         binding.shoe = Shoe()
+
         binding.shoeSizeEditText.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) binding.shoeSizeEditText.text.clear()
         }
+
         binding.cancelButton.setOnClickListener {
             findNavController().navigateUp()
         }
+
         binding.saveButton.setOnClickListener {
 
             if (validateInput()) {
@@ -46,6 +50,7 @@ class ShoeDetailFragment : Fragment() {
                 findNavController().navigateUp()
             }
         }
+
         return binding.root
     }
 

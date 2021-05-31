@@ -11,6 +11,15 @@ import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
 
+    /**
+     * TODO Update Welcome screen layout, remove green tick icon
+     * TODO Add instructions to User Guide screen
+     * TODO Hide keyboard, remove focus on EditTexts
+     * TODO Switch to Material buttons
+     * TODO Update general app styling, fonts, colors, text
+     * TODO Update project README
+     */
+
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

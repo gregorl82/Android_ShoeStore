@@ -22,6 +22,6 @@ The app consists of five screens:
 
 - Add an authentication layer to manage user access
 - Add a persistence layer to store the added items between app uses
-- Use RecyclerView for more performant
+- Use RecyclerView for more performant display of the list of shoes
 - Allow editing and deleting of existing list items
 - Allow user to upload images for each shoe

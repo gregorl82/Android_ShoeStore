@@ -2,7 +2,6 @@ package com.udacity.shoestore.ui
 
 import android.os.Bundle
 import android.view.*
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
@@ -11,7 +10,6 @@ import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
 import com.udacity.shoestore.databinding.ShoeListItemBinding
-import kotlinx.android.synthetic.main.shoe_list_item.view.*
 
 class ShoeListFragment : Fragment() {
 

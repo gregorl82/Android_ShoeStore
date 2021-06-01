@@ -1,78 +1,27 @@
-# The Shoe Store
+# Shoe Store Inventory App
 
-This project will consist of five screens. You don't have to create a shoe store, you can use any other item as long as you create the following screens. You will be creating:
+An application designed to record the inventory for a shoe store, that implements Jetpack Navigation, ViewModels and LiveData with data binding.
 
-1. Login screen: Email and password fields and labels plus create and login buttons
-2. Welcome onboarding screen
-3. Instructions onboarding screen
-4. Shoe Listing screen
-5. Shoe Detail screen for adding a new shoe
+The app consists of five screens:
 
-## Getting Started
+1. A login screen for the user to enter sign in credentials (note - this version of the app does not have authentication features).
+2. A welcome screen that simulates a successful sign in.
+3. A user guide page, detailing instructions on how to use the app.
+4. A shoe list screen to display the list of shoes the user has added to the inventory.
+5. A shoe detail screen for adding a new shoe to the inventory.
 
-Open the starter project in the latest stable version of Android Studio.
+## Technical features
+- single Activity application, uses a Fragment to represent each screen
+- all views are inflated using data binding and fields are populated with bound data
+- uses Jetpack Navigation to manage the flow of screens through the app and the back stack
+- shoe list and new shoe entry screens use a shared ViewModel to save and display shoes
+- shoe list is wrapped in a LiveData object
+- shoe list screen observes the list of shoes and creates the shoe list when the list is updated by the shoe entry screen
 
-Open the starter project in Android Studio
+## Ideas for further development
 
-##Steps
-
-1. Open the starter project in Android Studio
-
-2. Add the navigation libraries to the app build.gradle file
-
-3. Add the safe-arg plugin to the main and app build.gradle file
-
-4. Create a new navigation xml file
-
-5. Create a new Login destination.
-
-   * Include email and password labels 
-
-   - Include email and password fields
-   - Create buttons for creating a new login and logging in with an existing account
-   - Clicking either button should navigate to the Welcome Screen.
-
-6. Create a new Welcome screen destination that includes:
-
-   * A new layout
-   * At least 2 textviews
-   * A navigation button with actions to navigate to the instructions screen
-
-7. Create a new Instruction destination that includes:
-
-   * A new layout
-   * At least 2 textviews
-   * A navigation button with actions to navigate to the shoe list screen
-
-8. Create a class that extends ViewModel
-
-   *  Use a LiveData field that returns the list of shoes
-
-9. Create a new Shoe List destination that includes:
-
-   * A new layout
-   * A ScrollView
-   * A LinearLayout for Shoe Items
-   * A FloatingActionButton with an action to navigate to the shoe detail screen
-
-10. In MainActivity, setup the nav controller with the toolbar and an AppBarConfiguration.
-
-11. Create a new Shoe Detail destination that includes:
-
-    * A new layout
-    * A TextView label and EditView for the
-      * Shoe Name
-      * Company
-      * Shoe Size
-      * Description
-    * A Cancel button with an action to navigate back to the shoe list screen
-    * A Save button with an action to navigate back to the shoe list screen and add a new Shoe to the Shoe View Model
-
-12. Make sure you can’t go back to onboarding screens
-
-13. In the Shoe List screen:
-
-    * Use an Activity level ViewModel to hold a list of Shoes (use by activityViewModels)
-    * Observe the shoes variable from the ViewModel
-    * Use DataBindingUtil to inflate the shoe_list layout
-    * Add a new layout item into the scrollview for each shoe.
+- Add an authentication layer to manage user access
+- Add a persistence layer to store the added items between app uses
+- Use RecyclerView for more performant
+- Allow editing and deleting of existing list items
+- Allow user to upload images for each shoe

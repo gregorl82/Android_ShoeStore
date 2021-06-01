@@ -8,10 +8,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="8dp">
 
         <ImageView
-            android:id="@+id/success_image"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center_horizontal"
@@ -19,16 +19,23 @@
             tools:srcCompat="@drawable/ic_baseline_check_circle" />
 
         <TextView
-            android:id="@+id/success_text"
+            style="@style/screenHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/success"
-            android:textAlignment="center"
-            android:textStyle="bold" />
+            android:layout_marginTop="8dp"
+            android:text="@string/success" />
+
+        <TextView
+            style="@style/screenText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/continue_text" />
 
         <Button
             android:id="@+id/next_button"
             style="@style/buttonStyle"
+            android:layout_marginTop="8dp"
             android:text="@string/continue_btn" />
 
     </LinearLayout>

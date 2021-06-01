@@ -13,37 +13,47 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/name_text"
-            android:layout_width="wrap_content"
+            style="@style/shoeItemHeader"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@{shoe.name}"
-            tools:text="Air Max" />
+            tools:text="Air Jordan XXXIII" />
 
         <TextView
             android:id="@+id/company_text"
-            android:layout_width="wrap_content"
+            style="@style/shoeItemText"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@{shoe.company}"
             tools:text="Nike" />
 
         <TextView
             android:id="@+id/size_text"
-            android:layout_width="wrap_content"
+            style="@style/shoeItemText"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@{`Size: ` + shoe.size}"
             tools:text="Size: 9.5" />
 
         <TextView
-            android:id="@+id/description_text"
-            android:layout_width="wrap_content"
+            style="@style/shoeItemText"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ellipsize="end"
+            android:text="@string/description"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description_text"
+            style="@style/shoeItemText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@{shoe.description}"
-            tools:text="Latest must-have trainers" />
+            tools:text="Classic must-have trainers inspired by a basketball legend. This is the first Air Jordan model to go laceless." />
 
     </LinearLayout>
 

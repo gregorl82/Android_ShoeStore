@@ -21,40 +21,30 @@
 
         <TextView
             android:id="@+id/login_text"
+            style="@style/loginFieldLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/raleway"
-            android:text="@string/email"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="@string/email" />
 
         <EditText
             android:id="@+id/email_edit_text"
+            style="@style/loginField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:fontFamily="@font/raleway"
             android:inputType="textEmailAddress" />
 
         <TextView
             android:id="@+id/password_text"
+            style="@style/loginFieldLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/raleway"
-            android:text="@string/password"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="@string/password" />
 
         <EditText
             android:id="@+id/password_edit_text"
+            style="@style/loginField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:fontFamily="@font/raleway"
             android:inputType="textPassword" />
 
         <Button

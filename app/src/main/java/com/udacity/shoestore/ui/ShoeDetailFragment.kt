@@ -30,6 +30,7 @@ class ShoeDetailFragment : Fragment() {
         binding.shoe = Shoe()
 
         binding.cancelButton.setOnClickListener {
+            hideKeyboard()
             findNavController().navigateUp()
         }
 

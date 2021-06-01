@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -22,6 +23,64 @@
         <item name="android:backgroundTint">#2196F3</item>
         <item name="android:fontFamily">@font/raleway_extrabold</item>
         <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="shoeItemText">
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:fontFamily">@font/raleway</item>
+    </style>
+
+    <style name="shoeItemHeader">
+        <item name="android:fontFamily">@font/raleway_extrabold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="screenText">
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="screenHeader">
+        <item name="android:fontFamily">@font/raleway_extrabold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="instructionText">
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="loginFieldLabel">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="formFieldLabel">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="formField">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/raleway</item>
+    </style>
+
+    <style name="loginField">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:fontFamily">@font/raleway</item>
     </style>
 
 </resources>

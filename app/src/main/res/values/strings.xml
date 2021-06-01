@@ -20,11 +20,17 @@
     <string name="logout">Logout</string>
 
     <!--Onscreen text-->
-    <string name="success">Success!</string>
+    <string name="success">Successfully logged in!</string>
     <string name="placeholder">Click the \'+\' button to start adding shoes</string>
     <string name="shoe_inventory_tracker">Welcome to Shoe Tracker</string>
-    <string name="instructions">Instructions</string>
+    <string name="user_guide_header">Shoe Store User Guide</string>
     <string name="shoe_entry_header">Enter shoe details</string>
+    <string name="continue_text">Press the button below to continue.</string>
+    <string name="instruction_text_1">This app is designed for holding inventory information for a shoe store.</string>
+    <string name="instruction_text_2">Shoes will be displayed in a list on the Shoe List screen.</string>
+    <string name="instruction_text_3">To add a new shoe to the list, click the \'+\' button where you will be taken to the \'Add a new shoe\' screen.</string>
+    <string name="instruction_text_4">Enter the new shoe details and press \'Save\' to add the shoe to the list, or \'Cancel\' to return to Screen List without saving.</string>
+    <string name="instruction_text_5">Pressing back or \'Logout\' on the Shoe List screen will take you back to the Log in page.</string>
 
     <!--Buttons-->
     <string name="next">Next</string>
@@ -41,4 +47,5 @@
 
     <!--Toast message-->
     <string name="shoe_details_missing">Enter all details before saving</string>
+
 </resources>

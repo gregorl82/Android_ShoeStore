@@ -19,9 +19,9 @@
 
         <TextView
             android:id="@+id/shoe_entry_title_text"
+            style="@style/screenHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/raleway"
             android:text="@string/shoe_entry_header"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -29,21 +29,17 @@
 
         <TextView
             android:id="@+id/shoe_name_label"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/raleway"
+            style="@style/formFieldLabel"
             android:text="@string/shoe_name_label"
-            android:textStyle="bold"
             app:layout_constraintBaseline_toBaselineOf="@id/shoe_name_edit_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/shoe_entry_title_text" />
 
         <EditText
             android:id="@+id/shoe_name_edit_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/raleway"
+            style="@style/formField"
             android:hint="@string/shoe_name_hint"
+            android:inputType="text"
             android:text="@={shoe.name}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/shoe_name_label"
@@ -52,22 +48,16 @@
 
         <TextView
             android:id="@+id/company_label"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/raleway"
+            style="@style/formFieldLabel"
             android:text="@string/company"
-            android:textStyle="bold"
             app:layout_constraintBaseline_toBaselineOf="@+id/company_edit_text"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/company_edit_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:fontFamily="@font/raleway"
+            style="@style/formField"
             android:hint="@string/company_hint"
-            android:inputType="textPersonName"
+            android:inputType="text"
             android:text="@={shoe.company}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/company_label"
@@ -75,22 +65,15 @@
 
         <TextView
             android:id="@+id/shoe_size_label"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/raleway"
+            style="@style/formFieldLabel"
             android:text="@string/shoe_size"
-            android:textStyle="bold"
             app:layout_constraintBaseline_toBaselineOf="@+id/shoe_size_edit_text"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/shoe_size_edit_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:digits="0123456789."
-            android:ems="10"
-            android:fontFamily="@font/raleway"
-            android:inputType="numberDecimal"
+            style="@style/formField"
+            android:inputType="number|numberDecimal"
             android:text="@={`` + shoe.size}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/shoe_size_label"
@@ -98,22 +81,16 @@
 
         <TextView
             android:id="@+id/description_label"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/raleway"
+            style="@style/formFieldLabel"
             android:text="@string/description"
-            android:textStyle="bold"
             app:layout_constraintBaseline_toBaselineOf="@+id/description_edit_text"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/description_edit_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:fontFamily="@font/raleway"
+            style="@style/formField"
             android:hint="@string/description_hint"
-            android:inputType="textPersonName"
+            android:inputType="text"
             android:text="@={shoe.description}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/description_label"

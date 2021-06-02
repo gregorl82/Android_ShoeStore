@@ -5,6 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.ShoeListFragment">
 
+    <!--I chose to use ConstraintLayout as the parent ViewGroup to simplify the positioning of the
+        floating action button. The ScrollView ensures the user can see the whole list when the
+        list of shoes grows larger than the screen and the LinearLayout is the root to attach the
+        list items to.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

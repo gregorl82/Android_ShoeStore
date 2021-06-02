@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.InstructionFragment">
 
+    <!-- A LinearLayout was used because this screen is a simple list of TextViews with a button-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -12,6 +12,9 @@
             type="com.udacity.shoestore.models.Shoe" />
     </data>
 
+    <!--Using ConstraintLayout made the most sense to me here as this is the most complex screen in
+        the application. Using baseline constraints allowed me to align the TextView labels with
+        their corresponding EditTexts.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
